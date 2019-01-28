@@ -25,10 +25,10 @@ def do_work(s3obj):
     os.remove('tempxtr')
 
 #connecting to S3
-"""conn = boto3.s3.connection.S3Connection('AKIAJ5IB6H4DWEG7GPJQ','11X0GXDoqys7ZdEZkBCa58MpA0Ir/BcQ61CrhhyK')
+"""conn = boto3.s3.connection.S3Connection('********************','****************************************')
 bucket = conn.get_bucket(bucketname)"""
 
-session = Session(aws_access_key_id = 'AKIAIZ6K3YPMUWJO7YJQ', aws_secret_access_key = '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')
+session = Session(aws_access_key_id = '********************', aws_secret_access_key = '****************************************')
 s3 = session.resource('s3')
 bucket = s3.Bucket(bucketname)
 for key in bucket.objects.all():
